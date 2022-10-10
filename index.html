@@ -4,54 +4,271 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mate Mardel</title>
+    <title>Mardel Mates</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
+
 <body>
     <header>
         <div >
             <ul class="nav1">
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Iniciar sesión</a></li>
-                <li><a href="#">Crear cuenta</a></li>
+                <li><a href="/login/login.html">Iniciar sesión</a></li>
+                <li><a href="/registro/registro.html">Crear cuenta</a></li>
             </ul>
         </div>
         <nav >
             <ul class="nav2">
-                <li><a href="#">Mates</a></li>
-                <li><a href="#">Combos</a></li>
-                <li><a href="#">Termos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#partemate">Mates</a></li>
+                <li><a href="#partebombillas">Bombillas</a></li>
+                <li><a href="#partetermos">Termos</a></li>
+                <li><a href="#partecombos">Combos</a></li>
             </ul>
         </nav>  
     </header>
 
     <main>
         <section class="seccion-portada">
-            <div class="titulo">
-                <h2>
-                    Lleva tu estilo a donde vos quieras
-                </h2>
+            <div class="logo">
+                <img src="./asset/logo principal.png" alt="logo">
             </div>
-
             <div class="portada">
-                <img src="./asset/portada.jpg" alt="" height="400" width="350">
+                <img src="./asset/portada.jpg" alt="" >
+            </div>
+        </section>
+
+        <section class="seccion-beneficios">
+            <h2>¿Porque elegir nuestros productos?</h2>
+            <div class="contenedor-beneficios">
+                <div class="beneficios">
+                    <img src="./asset/beneficios/beneficio1.png" class="icono-beneficios" alt="">
+                    <p>Elegimos los mejores metodos para que el pedido lleguen lo antes posible</p>
+                </div>
+
+                <div class="beneficios">
+                    <img src="./asset/beneficios/beneficio2.png" class="icono-beneficios" alt="">
+                    <p>Utilizamos materiales de exelente calidad en nuestros productos </p>
+                </div>
+
+                <div class="beneficios">
+                    <img src="./asset/beneficios/beneficio3.png" class="icono-beneficios" alt="">
+                    <p>En la relacion precio-calidad ofrecemos la mejor variedad posible </p>
+                </div>
+
             </div>
         </section>
 
         <section class="seccion-mates">
+            <h3 id="partemate" >Mates</h3>
+
             <div class="contenedor-mates">
+
+                <div class="mates">
+                   <img src="./asset/mates/mate camionero.jpg" alt="camionero"> 
+                   <div class="info-mates">
+                    <p>Mate camionero premium</p>
+                    <div class="precio">
+                        <p>$5600</p>
+                        <a class="boton" href="#">Agregar</a>
+                    </div>
+                   </div>
+                </div>
+
+                <div class="mates">
+                    <img src="./asset/mates/mate imperial.jpeg" alt="imperial">
+                    <div class="info-mates">
+                        <p>Mate imperial premium</p>
+                        <div class="precio">
+                            <p>$6600</p>
+                            <a class="boton" href="#">Agregar</a>
+                        </div>
+                       </div>
+                </div>
+
+                <div class="mates">
+                    <img src="./asset/mates/mate scaloneta.jpg" alt="scaloneta">
+                    <div class="info-mates">
+                        <p>Mate scaloneta 2022</p>
+                        <div class="precio">
+                            <p>$8600</p>
+                            <a class="boton" href="#">Agregar</a>
+                        </div>
+                       </div>
+                </div>
+
+                <div class="mates">
+                    <img src="./asset/mates/mate torpedo.jpg" alt="torpedo">
+                    <div class="info-mates">
+                        <p>Mate torpedo premium</p>
+                        <div class="precio">
+                            <p>$4600</p>
+                            <a class="boton" href="#">Agregar</a>
+                        </div>
+                       </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-bombillas">
+            <h3 id="partebombillas" >Bombillas</h3>
+
+            <div class="contenedor-bombillas">
+
+                <div class="bombillas">
+                    <img src="./asset/bombillas/bombilla acero basic pico de loro.jpeg" alt="picoloro">
+                    <div class="info-bombillas">
+                        <p>Pico de loro</p>
+                        <div class="precio">
+                            <p>$1600</p>
+                            <a class="boton" href="#">Agregar</a>
+                        </div>
+                       </div>
+                </div>
+
+                <div class="bombillas">
+                    <img src="./asset/bombillas/bombilla acero inox.jpeg" alt="aceroinox">
+                    <div class="info-bombillas">
+                        <p>Acero inoxidable</p>
+                        <div class="precio">
+                            <p>$1000</p>
+                            <a class="boton" href="#">Agregar</a>
+                        </div>
+                       </div>
+                </div>
+
+                <div class="bombillas">
+                    <img src="./asset/bombillas/bombilla personalizada.jpeg" alt="personalizada">
+                    <div class="info-bombillas">
+                        <p>Alpaca personalizada</p>
+                        <div class="precio">
+                            <p>$2100</p>
+                            <a class="boton" href="#">Agregar</a>
+                        </div>
+                       </div>
+                </div>
+
+                <div class="bombillas">
+                    <img src="./asset/bombillas/bombilla pico de rey.jpeg" alt="picorey">
+                    <div class="info-bombillas">
+                        <p>Pico de rey</p>
+                        <div class="precio">
+                            <p>$1800</p>
+                            <a class="boton" href="#">Agregar</a>
+                        </div>
+                       </div>
+                </div>
 
             </div>
         </section>
 
         <section class="seccion-termos">
+            <h3 id="partetermos" >Termos</h3>
+
             <div class="contenedor-termos">
+
+                <div class="termos">
+                    <img src="./asset/termos/termo comun.jpg" alt="comun">
+                    <div class="info-termos">
+                        <p>Termo media manija</p>
+                        <div class="precio">
+                            <p>$5000</p>
+                            <a class="boton" href="#">Agregar</a>
+                        </div>
+                       </div>
+                </div>
+
+                <div class="termos">
+                    <img src="./asset/termos/termo lumilagro.jpeg" alt="Luminox">
+                    <div class="info-termos">
+                        <p>Termo Lumilagro Luminox</p>
+                        <div class="precio">
+                            <p>$9800</p>
+                            <a class="boton" href="#">Agregar</a>
+                        </div>
+                       </div>
+                </div>
+
+                <div class="termos">
+                    <img src="./asset/termos/termo perz2.jpeg" alt="perz">
+                    <div class="info-termos">
+                        <p>Termo personalizado</p>
+                        <div class="precio">
+                            <p>$6800</p>
+                            <a class="boton" href="#">Agregar</a>
+                        </div>
+                       </div>
+                </div>
+
+                <div class="termos subl1">
+                    <img src="asset/termos/sublimado1.jpeg" alt="subl3">
+                      <div class="info-termos">
+                        <p>Termo sublimado</p>
+                        <p>Modelo a eleccion propia</p>
+                        <div class="precio">
+                            <p>$6800</p>
+                            <a class="boton" href="#">Agregar</a>
+                        </div>
+                       </div>
+                </div>
 
             </div>
         </section>
 
         <section class="seccion-combos">
+            <h3 id="partecombos" >Combos</h3>
+
             <div class="contenedor-combos">
+
+                <div class="combos aceroinox">
+                    <img src="asset/combos/acero inox y bombilla.jpeg"  alt="combo1">
+                      <div class="info-combos">
+                        <p>Mate de acero inox.</p>
+                        <p>con bombilla</p>
+                        <div class="precio">
+                            <p>$5700</p>
+                            <a class="boton" href="#">Agregar</a>
+                        </div>
+                       </div>
+                </div>
+
+                <div class="combos">
+                    <img src="asset/combos/camionero con bombilla pers.jpeg" alt="combo2">
+                      <div class="info-combos">
+                        <p>Mate imperial y</p>
+                        <p>bombilla personalizados</p>
+                        <div class="precio">
+                            <p>$10000</p>
+                            <a class="boton" href="#">Agregar</a>
+                        </div>
+                       </div>
+                </div>
+
+                <div class="combos">
+                    <img src="asset/combos/imperial y termo pers.jpeg" alt="combo3">
+                      <div class="info-combos">
+                        <p>Mate imperial,termo y</p>
+                        <p>bombilla personalizados</p>
+                        <div class="precio">
+                            <p>$22000</p>
+                            <a class="boton" href="#">Agregar</a>
+                        </div>
+                       </div>
+                </div>
+
+
+                <div class="combos">
+                    <img src="asset/combos/torpedo,bombilla.jpg" alt="combo4">
+                      <div class="info-combos">
+                        <p>Mate torpedo con</p>
+                        <p>bombilla personalizada</p>
+                        <div class="precio">
+                            <p>$6000</p>
+                            <a class="boton" href="#">Agregar</a>
+                        </div>
+                       </div>
+                </div>
+
 
             </div>
         </section>

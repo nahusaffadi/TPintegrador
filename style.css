@@ -4,7 +4,10 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    font-family: "Montserrat", sans-serif;
 }
+
+/* header*/
 
 header{
     width: 100%;
@@ -17,7 +20,10 @@ header{
 .nav1{
     display: flex;
     gap: 16px;
+    align-items: center;
     justify-content: end;
+    margin-top: 5px;
+    padding: 0 5px;
 }
 
 .nav1 a{
@@ -26,13 +32,19 @@ header{
 
 .nav2{
     display: flex;
-    gap: 16px;
+    gap: 20px;
     justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 50px;
 }
 
 .nav2 a{
-    color: black;
+    color: white;
 }
+
+/*fin header*/
+
 
 main{
     display: flex;
@@ -41,13 +53,381 @@ main{
     justify-content: center;
 }
 
+/*portada*/
+
 .seccion-portada{
+    flex-wrap: wrap;
     width: 100%;
-    margin-top: 20px;
     display: flex;
+    margin-top: 20px;
     align-content: center;
     justify-content: center;
-    padding: 20px 0;
-    gap: 16px   ;
+    gap: 100px;
+    flex-direction: row;
+    padding: 30px 0;
 }
 
+.portada img{
+    height: 400px;
+    width: 600px;
+    border-radius: 5px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+ 
+/* fin portada*/
+
+/* comienzo beneficios*/
+
+.seccion-beneficios{
+    gap: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.seccion-beneficios h2{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.icono-beneficios{
+    height: 100px;
+    width: 100px;
+}
+
+.contenedor-beneficios{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.beneficios{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+} 
+
+.beneficios p{
+    font-size: small;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/*fin beneficios*/
+
+/*inicio mates*/
+
+.seccion-mates{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 50px;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.seccion-mates h3{
+    width: 100%;
+    justify-content: start;
+    font-size: xx-large;
+}
+
+.contenedor-mates{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+}
+
+.mates{
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    width: 200px;
+    background-color: black;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.info-mates{
+    width: 190px;
+}
+
+.info-mates p{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+    color: white;
+}
+
+.mates img{
+    height: 230px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.precio{
+    margin-top: 10px;
+    display: flex;
+    gap: 50px;
+}
+
+.precio p{
+    font-size: 20px;
+}
+
+.precio a{
+    color: black;
+}
+
+.boton{
+    display: flex;
+    border-radius: 15px;
+    background-color: white;
+    width: 90px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 7px;
+}
+
+.mates:hover{ 
+    animation: scale-up-center 1s ease 0s 1 normal forwards;
+    
+  }
+  @keyframes scale-up-center {
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1.1);
+    }
+  }
+  
+
+/*fin mates*/
+
+/*comienzo bombillas*/
+
+.seccion-bombillas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.seccion-bombillas h3{
+    width: 100%;
+    justify-content: start;
+    font-size: xx-large;
+}
+
+.contenedor-bombillas{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+}
+
+.bombillas{
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    width: 200px;
+    background-color: black;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.info-bombillas{
+    width: 190px;
+}
+
+.info-bombillas p{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+    color: white;
+}
+
+.bombillas img{
+    height: 230px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.bombillas:hover{ 
+    animation: scale-up-center 1s ease 0s 1 normal forwards;
+    
+  }
+  @keyframes scale-up-center {
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1.1);
+    }
+  }
+  
+/*fin bombillas*/
+
+/* inicio termos*/
+
+.seccion-termos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.seccion-termos h3{
+    width: 100%;
+    justify-content: start;
+    font-size: xx-large;
+}
+
+.contenedor-termos{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+}
+
+.termos{
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    width: 200px;
+    background-color: black;
+    align-items: center;
+    border-radius: 10px;
+}
+.subl1{
+    height: 350px;
+}
+
+.info-termos{
+    width: 190px;
+}
+
+.info-termos p{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+    color: white;
+}
+
+.termos img{
+    height: 230px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.termos:hover{ 
+    animation: scale-up-center 1s ease 0s 1 normal forwards;
+    
+  }
+  @keyframes scale-up-center {
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1.1);
+    }
+  }
+
+/*fin termos*/
+
+/*inicio combos*/
+
+.seccion-combos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.seccion-combos h3{
+    width: 100%;
+    justify-content: start;
+    font-size: xx-large;
+}
+
+.contenedor-combos{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+}
+
+.combos{
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    width: 200px;
+    background-color: black;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.info-combos{
+    width: 190px;
+}
+
+.info-combos p{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+    color: white;
+}
+
+.combos img{
+    height: 230px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.combos:hover{ 
+    animation: scale-up-center 1s ease 0s 1 normal forwards;
+    
+  }
+  @keyframes scale-up-center {
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1.1);
+    }
+  }
