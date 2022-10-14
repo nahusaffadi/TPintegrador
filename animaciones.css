@@ -1,3 +1,75 @@
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+
+}
+
+.overlay{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: none;
+}
+
+#cart-toggle:checked ~ .overlay{
+    display: block;
+}
+#menu-toggle:checked ~ .overlay{
+    display: block;
+}
+
+.nav1 li{
+    position: relative;
+    padding: 0;   
+}
+
+.nav1 li a::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+}
+
+.nav1 li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+@keyframes slide-right {
+    from{
+        transform:translateX(150px);
+    }
+    to{
+        transform:translateX(0);
+    }
+}
+
+@keyframes slide-left {
+    from{
+        transform:translateX(-150px);
+    }
+    to{
+        transform:translateX(0);
+    }
+}
+
+.portada {
+    animation: slide-right 1s ease ;
+}
+
+.logo{
+    animation: slide-left 1s ease ;
 }

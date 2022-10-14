@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mardel Mates</title>
+    <link rel="stylesheet" href="./animaciones.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
@@ -26,7 +27,7 @@
             <input type="checkbox" id="menu-toggle">
 
             <ul class="nav1">
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                     <li><a href="#partemate">Mates</a></li>
                     <li><a href="#partebombillas">Bombillas</a></li>
                     <li><a href="#partetermos">Termos</a></li>
@@ -80,17 +81,22 @@
 
                 <button class="compra">Iniciar compra</button>
 
+
+
             </div>
 
+            <div class="overlay"></div>
         </nav>  
     </header>
 
     <main>
         <section class="seccion-portada">
-            <div class="logo">
-                <img src="./asset/logo principal.png" alt="logo">
-            </div>
-            <div class="portada">
+        <div class="logo">
+            <img src="./asset/logo principal.png" alt="logo">
+        </div>
+            
+
+        <div class="portada">
                 <img src="./asset/portada.jpg" alt="" >
             </div>
         </section>
@@ -349,7 +355,7 @@
             </div>
     
             <div class="contactenos">
-                <h5>Contactenos</h5>
+                <h5 id="contacto">Contactenos</h5>
                 <div class="icono-contacto">
                     <img src="./asset/correo.png"  alt="">
                     <p>matesmardel@gmail.com</p>
