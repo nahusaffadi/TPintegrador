@@ -10,38 +10,161 @@
 /* header*/
 
 header{
+    background-color: black;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px ;
-}
- 
-.nav1{
-    display: flex;
-    gap: 16px;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    justify-content: end;
-    margin-top: 5px;
-    padding: 0 5px;
+    height: 60px;
+    padding: 0px 30px 0px 30px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
+
+header img{
+    height: 75%;
+}
+
+.navbar, .nav1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    gap: 150px;
+}
+
+.nav1{
+    gap: 20px  ;
+}
+
 
 .nav1 a{
-    color: black;
-}
-
-.nav2{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    height: 50px;
-}
-
-.nav2 a{
     color: white;
 }
+
+.icono-carrito{
+    color: white;
+    cursor: pointer;
+    padding: 15px 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    height: 95%;
+}
+
+#menu-toggle,
+#cart-toggle,
+.menu-label{
+    display: none;
+}
+
+.changuito{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 40px 20px;
+    background: white;
+    border-left: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+    display: none;
+    z-index: 2;
+}
+
+#cart-toggle:checked + .changuito{
+    display: flex;
+}
+
+.changuito::-webkit-scrollbar{
+    display: none;
+}
+
+.changuito h2{
+    font-size:x-large;
+    font-weight: 400;
+}
+
+.item-chango img{
+    height: 130px;
+    border-radius: 15px;
+}
+
+.item-chango{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.item-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.item-info h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.item-handler{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contador-chango{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.contador-chango:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+
+.divisor{
+    margin-top: 15px;
+    border: 1px solid black;
+}
+
+.total-compra{
+    display: flex;
+    justify-content: space-between;
+}
+
+.compra{
+    color: white;
+border-radius: 20px;
+height: 50px;
+font-weight: 400;
+font-size: 25px;
+background-color: black;
+cursor: pointer;
+}
+
+.compra:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+
 
 /*fin header*/
 
@@ -62,7 +185,7 @@ main{
     margin-top: 20px;
     align-content: center;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
     flex-direction: row;
     padding: 30px 0;
 }
@@ -78,6 +201,7 @@ main{
     align-items: center;
 }
  
+
 /* fin portada*/
 
 /* comienzo beneficios*/
@@ -114,7 +238,7 @@ main{
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 200px;
     text-align: center;
     align-items: center;
 } 
@@ -133,7 +257,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0 50px;
+    padding: 50px;
     gap: 20px;
     flex-direction: column;
     width: 100%;
@@ -149,15 +273,15 @@ main{
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
-    gap: 60px;
+    gap: 75px;
     justify-content: center;
 }
 
 .mates{
     display: flex;
     flex-direction: column;
-    height: 320px;
-    width: 200px;
+    height: 350px;
+    width: 240px;
     background-color: black;
     align-items: center;
     border-radius: 10px;
@@ -176,8 +300,8 @@ main{
 }
 
 .mates img{
-    height: 230px;
-    width: 200px;
+    height: 240px;
+    width: 240px;
     border-radius: 10px;
 }
 
@@ -246,15 +370,15 @@ main{
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
-    gap: 60px;
+    gap: 75px;
     justify-content: center;
 }
 
 .bombillas{
     display: flex;
     flex-direction: column;
-    height: 320px;
-    width: 200px;
+    height: 325px;
+    width: 240px;
     background-color: black;
     align-items: center;
     border-radius: 10px;
@@ -273,8 +397,8 @@ main{
 }
 
 .bombillas img{
-    height: 230px;
-    width: 200px;
+    height: 240px;
+    width: 240px;
     border-radius: 10px;
 }
 
@@ -315,15 +439,15 @@ main{
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
-    gap: 60px;
+    gap: 75px;
     justify-content: center;
 }
 
 .termos{
     display: flex;
     flex-direction: column;
-    height: 320px;
-    width: 200px;
+    height: 350px;
+    width: 240px;
     background-color: black;
     align-items: center;
     border-radius: 10px;
@@ -345,8 +469,8 @@ main{
 }
 
 .termos img{
-    height: 230px;
-    width: 200px;
+    height: 240px;
+    width: 240px;
     border-radius: 10px;
 }
 
@@ -387,15 +511,15 @@ main{
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
-    gap: 60px;
+    gap: 75px;
     justify-content: center;
 }
 
 .combos{
     display: flex;
     flex-direction: column;
-    height: 340px;
-    width: 200px;
+    height: 350px;
+    width: 240px;
     background-color: black;
     align-items: center;
     border-radius: 10px;
@@ -414,8 +538,8 @@ main{
 }
 
 .combos img{
-    height: 230px;
-    width: 200px;
+    height: 240px;
+    width: 240px;
     border-radius: 10px;
 }
 
@@ -431,3 +555,67 @@ main{
       transform: scale(1.1);
     }
   }
+
+/*fin combos*/
+
+/*inicio footer*/
+
+.footer{
+    display: flex;
+    height: 120px;
+    background-color: black;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenedor-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer h5{
+    color: white;
+    font-weight: 500;
+    font-size: large;
+}
+
+.sociales{
+    padding: 10px;
+    height: 100px;
+    width: 180px;
+}
+
+.sociales img{
+    width: 45px;
+    margin-top: 5px;
+}
+
+.sociales img:hover{
+    cursor: pointer;
+}
+
+.contactenos{
+    padding: 10px;
+    height: 100%;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.icono-contacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icono-contacto img{
+    width: 25px;
+    height: 25px;
+}
+
+.icono-contacto p{
+    color: white;
+}

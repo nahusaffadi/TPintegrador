@@ -6,25 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mardel Mates</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
 </head>
 
 
 <body>
     <header>
-        <div >
+
+        <img src="./asset/logo navbar.png" alt="">
+        <nav class="navbar"> 
+
+            <label for="menu-toggle" class="menu-label">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menu-toggle">
+
             <ul class="nav1">
-                <li><a href="/login/login.html">Iniciar sesión</a></li>
-                <li><a href="/registro/registro.html">Crear cuenta</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#partemate">Mates</a></li>
+                    <li><a href="#partebombillas">Bombillas</a></li>
+                    <li><a href="#partetermos">Termos</a></li>
+                    <li><a href="#partecombos">Combos</a></li>
+                    <li> <a href="./login/login.html">Login</a></li>
             </ul>
-        </div>
-        <nav >
-            <ul class="nav2">
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#partemate">Mates</a></li>
-                <li><a href="#partebombillas">Bombillas</a></li>
-                <li><a href="#partetermos">Termos</a></li>
-                <li><a href="#partecombos">Combos</a></li>
-            </ul>
+
+
+            <label for="cart-toggle" class="cart-lablel">
+                <i class="fa-sharp fa-solid fa-cart-shopping icono-carrito"></i>
+            </label>
+            <input type="checkbox" id="cart-toggle">
+
+            <div class="changuito">
+                <h2>Tus productos</h2>
+
+                <div class="item-chango">
+                    <img src="./asset/mates/mate scaloneta.jpg" alt="un producto">
+                    <div class="item-info">
+                        <h3 class="item-title">Mate Scaloneta 2022</h3>
+                        <p class="precio-item" >$8600</p>
+                    </div>
+
+                    <div class="item-handler">
+                        <span class="contador-chango">-</span>
+                        <span class="cantidad-item">1</span>
+                        <span class="contador-chango">+</span>
+                    </div>
+                </div>
+
+                <div class="item-chango">
+                    <img src="./asset/termos/termo perz2.jpeg  " alt="un producto">
+                    <div class="item-info">
+                        <h3 class="item-title">Termo personalizado</h3>
+                        <p class="precio-item" >$6800</p>
+                    </div>
+
+                    <div class="item-handler">
+                        <span class="contador-chango">-</span>
+                        <span class="cantidad-item">1</span>
+                        <span class="contador-chango">+</span>
+                    </div>
+                </div>
+
+                <span class="divisor"></span>
+
+                <div class="total-compra">
+                    <h3>Total</h3>
+                    <p>$15.400</p>
+                </div>
+
+                <button class="compra">Iniciar compra</button>
+
+            </div>
+
         </nav>  
     </header>
 
@@ -273,5 +330,39 @@
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+
+        <div class="contenedor-footer">
+            <div class="sociales">
+                <h5>
+                    Redes sociales
+                </h5>
+                
+                <div class="img-footer">
+                    <img src="/asset/facebook.png"  alt="" >
+    
+                    <img src="/asset/insta.png"   alt="">
+    
+                </div>
+    
+            </div>
+    
+            <div class="contactenos">
+                <h5>Contactenos</h5>
+                <div class="icono-contacto">
+                    <img src="./asset/correo.png"  alt="">
+                    <p>matesmardel@gmail.com</p>
+                </div>
+    
+                <div class="icono-contacto">
+                    <img src="./asset/localizacion.png" alt="">
+                    <p>San Martín 2468,Galeria São, Mar del Plata </p>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
 </body>
 </html>
